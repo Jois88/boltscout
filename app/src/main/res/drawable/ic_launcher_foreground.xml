@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bolt Scout launcher icon foreground: radar sweep with B initial -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer ring -->
+    <path
+        android:strokeColor="#4A90D9"
+        android:strokeWidth="3.5"
+        android:fillColor="#00000000"
+        android:pathData="M54,18 A36,36 0 0,1 90,54 A36,36 0 0,1 54,90 A36,36 0 0,1 18,54 A36,36 0 0,1 54,18 Z" />
+
+    <!-- Middle ring (dim) -->
+    <path
+        android:strokeColor="#2A5080"
+        android:strokeWidth="2"
+        android:fillColor="#00000000"
+        android:pathData="M54,30 A24,24 0 0,1 78,54 A24,24 0 0,1 54,78 A24,24 0 0,1 30,54 A24,24 0 0,1 54,30 Z" />
+
+    <!-- Radar sweep arm (green, pointing NNE) -->
+    <path
+        android:strokeColor="#00E676"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:pathData="M54,54 L72,25" />
+
+    <!-- Center dot -->
+    <path
+        android:fillColor="#00E676"
+        android:pathData="M54,50 A4,4 0 0,1 58,54 A4,4 0 0,1 54,58 A4,4 0 0,1 50,54 A4,4 0 0,1 54,50 Z" />
+
+    <!-- Sweep fade arc (ghost trail) -->
+    <path
+        android:strokeColor="#1A4A30"
+        android:strokeWidth="18"
+        android:fillColor="#00000000"
+        android:pathData="M54,18 A36,36 0 0,1 82,36" />
+
+    <!-- Letter S (Scout) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44,43 Q44,39 48,39 L60,39 Q64,39 64,43 Q64,47 60,48 L48,49 Q44,50 44,54 Q44,58 48,58 L62,58" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000"
+        android:pathData="M44,43 Q44,39 48,39 L60,39 Q64,39 64,43 Q64,47 60,48 L48,49 Q44,50 44,54 Q44,58 48,58 L62,58" />
+
+</vector>

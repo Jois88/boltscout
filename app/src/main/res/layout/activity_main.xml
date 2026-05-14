@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_deepnight"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="32dp"
+            android:paddingBottom="24dp">
+
+            <TextView
+                android:id="@+id/tv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="◉ BOLT SCOUT"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/accent"
+                android:letterSpacing="0.08" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Warsaw ride analyser"
+                android:textSize="13sp"
+                android:textColor="@color/text_hint" />
+        </LinearLayout>
+
+        <!-- Service status card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/bg_card"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:id="@+id/status_dot"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:background="@drawable/circle_status"
+                        android:backgroundTint="@color/status_inactive" />
+
+                    <TextView
+                        android:id="@+id/tv_service_status"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/service_inactive"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_primary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_enable_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/btn_enable_service"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/accent"
+                    app:cornerRadius="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Overlay permission card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/bg_card"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:id="@+id/overlay_dot"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:background="@drawable/circle_status"
+                        android:backgroundTint="@color/status_inactive" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="10dp"
+                        android:text="Draw Over Other Apps"
+                        android:textSize="15sp"
+                        android:textColor="@color/text_primary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/hint_permissions"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_hint" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_grant_overlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/btn_grant_overlay"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/accent_dim"
+                    app:cornerRadius="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- How it works card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/bg_card"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOW IT WORKS"
+                    android:textSize="11sp"
+                    android:textColor="@color/text_hint"
+                    android:letterSpacing="0.12"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/hint_how_it_works"
+                    android:textSize="13sp"
+                    android:textColor="@color/text_secondary"
+                    android:lineSpacingExtra="4dp" />
+
+                <!-- Verdict legend -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TAKE IT"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/verdict_take"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="YOUR CALL"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/verdict_call"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="SKIP"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/verdict_skip"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Open Bolt button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_open_bolt"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/btn_open_bolt"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/bg_elevated"
+            app:cornerRadius="10dp"
+            app:strokeColor="@color/divider"
+            app:strokeWidth="1dp" />
+
+        <!-- Debug test card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/bg_card"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DEBUG TESTS"
+                    android:textSize="11sp"
+                    android:textColor="@color/text_hint"
+                    android:letterSpacing="0.12"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_fire_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:text="FIRE 1"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/accent"
+                    app:cornerRadius="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_fire_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:text="FIRE 2"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/accent"
+                    app:cornerRadius="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_fire_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:text="FIRE 3"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/accent"
+                    app:cornerRadius="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_fire_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:text="FIRE 4"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/accent"
+                    app:cornerRadius="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_fire_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="8dp"
+                    android:text="FIRE 5"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/accent"
+                    app:cornerRadius="8dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Version -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="v1.0 · No internet required · All data stays on device"
+            android:textSize="11sp"
+            android:textColor="@color/text_hint"
+            android:gravity="center" />
+
+    </LinearLayout>
+</ScrollView>

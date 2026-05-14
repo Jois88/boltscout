@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme backgrounds -->
+    <color name="bg_deepnight">#0D0D1A</color>
+    <color name="bg_card">#1A1A2E</color>
+    <color name="bg_surface">#16213E</color>
+    <color name="bg_elevated">#1F2B4A</color>
+
+    <!-- Map colours -->
+    <color name="map_bg">#0F1626</color>
+    <color name="map_city">#1C2640</color>
+    <color name="map_district_alt">#192038</color>
+    <color name="map_wisla">#0A2A5E</color>
+    <color name="map_wisla_stroke">#1550A0</color>
+    <color name="map_road_major">#D0D0D8</color>
+    <color name="map_road_minor">#484860</color>
+    <color name="map_road_expressway">#FFD700</color>
+    <color name="map_label">#8090B0</color>
+    <color name="map_district_label">#606888</color>
+
+    <!-- Pins -->
+    <color name="pin_pickup">#00E676</color>
+    <color name="pin_pickup_shadow">#004D20</color>
+    <color name="pin_dropoff">#FF1744</color>
+    <color name="pin_dropoff_shadow">#4D0008</color>
+
+    <!-- Verdict colours -->
+    <color name="verdict_take">#00C853</color>
+    <color name="verdict_take_bg">#0A2A14</color>
+    <color name="verdict_skip">#FF1744</color>
+    <color name="verdict_skip_bg">#2A0A12</color>
+    <color name="verdict_call">#FFD600</color>
+    <color name="verdict_call_bg">#2A2200</color>
+
+    <!-- Text -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B8D0</color>
+    <color name="text_hint">#606888</color>
+    <color name="text_address">#E0E8FF</color>
+
+    <!-- Divider / border -->
+    <color name="divider">#2A2E4A</color>
+    <color name="accent">#4A90D9</color>
+    <color name="accent_dim">#2A4A6A</color>
+
+    <!-- Status indicators -->
+    <color name="status_active">#00E676</color>
+    <color name="status_inactive">#FF5252</color>
+    <color name="status_pending">#FFD600</color>
+</resources>

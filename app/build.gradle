@@ -1,0 +1,52 @@
+plugins {
+    id 'com.android.application'
+}
+
+def localProps = new Properties()
+def localPropsFile = rootProject.file('local.properties')
+if (localPropsFile.exists()) {
+    localPropsFile.withInputStream { localProps.load(it) }
+}
+
+android {
+    namespace 'com.boltscout'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.boltscout"
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+        buildConfigField "String", "GEOAPIFY_KEY", "\"${localProps.getProperty('GEOAPIFY_KEY', '')}\""
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            applicationIdSuffix ""
+            debuggable true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    // Provides real org.json implementation for JVM unit tests; Android's
+    // android.jar only ships stubs that throw RuntimeException("Stub!").
+    testImplementation 'org.json:json:20231013'
+}

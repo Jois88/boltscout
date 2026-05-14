@@ -1,0 +1,27 @@
+﻿.gradle/
+.idea/
+.claude/
+*.iml
+local.properties
+.DS_Store
+
+# Android build outputs
+build/
+*/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# APK/AAB artifacts
+*.apk
+*.aab
+*.ap_
+
+# Logs and generated verification artifacts
+*.log
+__pycache__/
+screenshot_*.png
+ui_dump.xml
+verify_*.py
+verify_*.txt
+*_test_results.txt

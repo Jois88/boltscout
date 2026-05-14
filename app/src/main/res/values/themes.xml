@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base dark theme -->
+    <style name="Theme.BoltScout" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryVariant">@color/accent_dim</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorOnSecondary">@color/text_primary</item>
+        <item name="android:colorBackground">@color/bg_deepnight</item>
+        <item name="colorSurface">@color/bg_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@color/bg_deepnight</item>
+        <item name="android:navigationBarColor">@color/bg_deepnight</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Ride verdict screen — translucent to float above Bolt -->
+    <style name="Theme.BoltScout.Ride" parent="Theme.BoltScout">
+        <item name="android:windowBackground">@color/bg_deepnight</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@color/bg_deepnight</item>
+    </style>
+
+</resources>

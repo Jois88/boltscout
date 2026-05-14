@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Adaptive icon foreground (circle radar icon for Bolt Scout)
+    Used as both ic_launcher and ic_launcher (round)
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Dark background fill -->
+    <path
+        android:fillColor="#0D0D1A"
+        android:pathData="M0,0 L108,0 L108,108 L0,108 Z" />
+
+    <!-- Outer ring -->
+    <path
+        android:strokeColor="#4A90D9"
+        android:strokeWidth="3"
+        android:fillColor="#00000000"
+        android:pathData="M54,18 A36,36 0 1,1 53.9,18 Z" />
+
+    <!-- Middle ring -->
+    <path
+        android:strokeColor="#4A90D9"
+        android:strokeWidth="2"
+        android:strokeAlpha="0.5"
+        android:fillColor="#00000000"
+        android:pathData="M54,30 A24,24 0 1,1 53.9,30 Z" />
+
+    <!-- Radar sweep -->
+    <path
+        android:strokeColor="#00E676"
+        android:strokeWidth="3"
+        android:pathData="M54,54 L54,18" />
+
+    <!-- Center dot -->
+    <path
+        android:fillColor="#00E676"
+        android:pathData="M54,54 A4,4 0 1,1 53.9,54 Z" />
+
+    <!-- Bolt letter B -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M44,38 L44,70 L55,70 A8,8 0 0,0 55,54 L44,54 M44,54 L57,54 A8,8 0 0,0 57,38 Z" />
+</vector>

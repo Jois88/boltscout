@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bolt Scout</string>
+
+    <!-- Accessibility service metadata -->
+    <string name="accessibility_service_label">Bolt Scout — Ride Analyser</string>
+    <string name="accessibility_service_description">
+        Bolt Scout reads ride request screens in the Bolt Driver app to show pickup and dropoff
+        locations on a map with a TAKE / SKIP verdict. No data leaves your device.
+    </string>
+
+    <!-- Main screen -->
+    <string name="title_setup">Bolt Scout Setup</string>
+    <string name="subtitle_setup">Warsaw ride analyser for Bolt drivers</string>
+    <string name="btn_enable_service">Enable Accessibility Service</string>
+    <string name="btn_open_bolt">Open Bolt Driver App</string>
+    <string name="service_active">Scout is ACTIVE — watching Bolt</string>
+    <string name="service_inactive">Scout is INACTIVE — tap to enable</string>
+    <string name="hint_how_it_works">When a ride request appears in Bolt, Bolt Scout instantly
+        shows both addresses on a Warsaw map and gives you a verdict:\n\n
+        TAKE IT — short trip, good direction, off-peak or ideal\n
+        SKIP — long trip during peak hours or bad destination\n
+        YOUR CALL — moderate trip, weigh it up\n\n
+        Peak hours: 07:00–10:00 and 15:00–19:00\n
+        Peak threshold: 8 km straight-line distance</string>
+    <string name="hint_permissions">Grant \'Draw over other apps\' so the verdict window floats above Bolt.</string>
+    <string name="btn_grant_overlay">Grant Overlay Permission</string>
+
+    <!-- Ride screen -->
+    <string name="label_pickup">PICKUP</string>
+    <string name="label_dropoff">DROPOFF</string>
+    <string name="label_distance">Distance</string>
+    <string name="label_time_status">Time</string>
+    <string name="verdict_take">TAKE IT</string>
+    <string name="verdict_skip">SKIP</string>
+    <string name="verdict_call">YOUR CALL</string>
+    <string name="address_unknown">Address not recognised</string>
+    <string name="peak_label">PEAK HOUR</string>
+    <string name="offpeak_label">OFF PEAK</string>
+    <string name="close_hint">Tap anywhere to dismiss</string>
+    <string name="auto_close">Closing in %d s</string>
+</resources>
