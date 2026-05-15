@@ -1,17 +1,18 @@
-﻿# BoltScout
+# BoltScout
 
-BoltScout is an Android app for monitoring Bolt driver ride-request screens and showing quick pickup/dropoff and verdict information in an overlay.
+BoltScout is an Android app for monitoring Bolt driver ride-request screens. When a ride request appears, it reads the pickup and drop-off addresses, shows them in a small overlay, and opens the route in Google Maps.
+
+No mapping or geocoding API key is required. The app passes the detected addresses directly to Google Maps, so `local.properties` only needs your local Android SDK path.
 
 ## Setup
 
-Create a `local.properties` file locally with your Android SDK path and Geoapify key:
+Create a `local.properties` file locally with your Android SDK path:
 
 ```properties
 sdk.dir=C:/Users/your-user/AppData/Local/Android/Sdk
-GEOAPIFY_KEY=your_key_here
 ```
 
-`local.properties` is intentionally ignored so local paths and secrets do not get committed.
+`local.properties` is intentionally ignored so local machine paths do not get committed.
 
 ## Build
 
